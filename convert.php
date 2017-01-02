@@ -1,5 +1,6 @@
 <?php
-namespace ISMAConvert{
+namespace ISMAConvert;
+
 function mb_ord($string)#Stackoverflow
 {
     if (extension_loaded('mbstring') === true)
@@ -60,5 +61,4 @@ function toansi($str){
     $res .= mb_chr($o);
   }
   return $res;
-}
 }
